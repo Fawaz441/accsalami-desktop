@@ -1,19 +1,28 @@
 // assets
-import { LoginOutlined, ProfileOutlined } from '@ant-design/icons';
+import { LoginOutlined, ProfileOutlined, BookOutlined } from '@ant-design/icons';
 
 // icons
 const icons = {
   LoginOutlined,
-  ProfileOutlined
+  ProfileOutlined,
+  BookOutlined
 };
 
 // ==============================|| MENU ITEMS - EXTRA PAGES ||============================== //
 
 const pages = {
-  id: 'authentication',
-  title: 'Authentication',
+  id: 'create',
+  title: 'Create',
   type: 'group',
   children: [
+    {
+      id: 'expenses1',
+      title: 'Expense',
+      type: 'item',
+      url: '/login',
+      icon: icons.BookOutlined,
+      target: true
+    },
     {
       id: 'login1',
       title: 'Login',
