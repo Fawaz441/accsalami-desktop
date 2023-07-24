@@ -1,4 +1,3 @@
-import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 // scroll bar
@@ -20,11 +19,9 @@ import reportWebVitals from './reportWebVitals';
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(
-  <StrictMode>
-    <ReduxProvider store={store}>
-      <App />
-    </ReduxProvider>
-  </StrictMode>
+  <ReduxProvider store={store}>
+    <App />
+  </ReduxProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
